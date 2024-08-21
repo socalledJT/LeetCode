@@ -39,3 +39,35 @@ Guides & Concepts for leetcode problems
     + Guide
         + Create a function to perform binary search
             - Needed because it will be used twice to find both ends of the wanted array
+
+#3 LeetCode1
+    - Name: Two Sum
+    - Dificulty: Easy
+    - Description:
+        Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+        You may assume that each input would have exactly one solution, and you may not use the same element twice.
+        You can return the answer in any order.
+
+#4 LeetCode5
+    - Name: Longest Palindrome
+    - Dificulty: Medium
+    - Description:
+        Given a string s, return the longest palindromic substring in s.
+
+#5 LeetCode9
+    - Name: Palindrome number
+    - Dificulty: Easy
+    - Description:
+        Given an integer x, return true if x is a  palindrome, and false otherwise.
+
+#6 LeetCode26
+    - Remove Duplicates from sorted array
+    - Dificulty: Easy
+    - Description:
+        Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. 
+        The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
+        Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:
+        
+        - Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. 
+        The remaining elements of nums are not important as well as the size of nums.
+        - Return k.

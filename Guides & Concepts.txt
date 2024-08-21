@@ -1,0 +1,41 @@
+Guides & Concepts for leetcode problems
+
+#1 - LeetCode33
+    - Name: Search in Rotated Sorted Array
+    - Dificulty: Medium
+    - Description:
+        There is an integer array nums sorted in ascending order (with distinct values).
+        Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) 
+        such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). 
+        For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
+        Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, 
+        or -1 if it is not in nums.
+        You must write an algorithm with O(log n) runtime complexity.
+
+    + New Concepts
+        + Rotated Arrays
+            - The procces of rearranging the lements of an array by shifting each element to a new position.
+                This is done by rotating the elements of the array clockwise or counterclockwise.
+        + O(Log n) -> Binary Search
+    
+    + Guide
+        + Find the pivot point of the array to find where the shift happended
+            - If array [1, 2, 3, 4] -> [3, 4, 1, 2] then '1' is the pivot point.
+        
+        + Perform binary search for the target
+            - Start with the middle element of the array and compare it with the target.
+            - If the middle element is equal to the target, return the index of the middle element.
+            - If the middle element is greater than the target, then the target must be in the left
+            half of the array. Otherwise, the target must be in the right half of the array.
+
+#2 Leetcode34
+    - Name: Find first and last position of Element in sortet array
+    - Dificulty: Medium
+    - Description:
+        Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
+        If target is not found in the array, return [-1, -1].
+        You must write an algorithm with O(log n) runtime complexity.
+
+    + Guide
+        + Create a function to perform binary search
+            - Needed because it will be used twice to find both ends of the wanted array

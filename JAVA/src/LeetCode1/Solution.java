@@ -1,3 +1,4 @@
+package LeetCode1;
 class Solution {
 
  

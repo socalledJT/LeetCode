@@ -71,3 +71,32 @@ Guides & Concepts for leetcode problems
         - Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. 
         The remaining elements of nums are not important as well as the size of nums.
         - Return k.
+
+#7 LeetCode50
+    - Name: Pow(x, n)
+    - Dificulty: Medium
+    - Description:
+        Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+
+    + New Concepts
+        + Recursion
+            - The helper function will call itself using half of 'n' value, multiplying the data with itself.
+            - If, during any Recursion, 'n' is an odd number, the result will be multiplied by x as well to make up for the lost value during halving.
+   
+    + Guide
+        + Recursion was chosen to solve the problem in O(Log n) complexity
+            - The function will keep breaking the problem down into smaller chunks making the math simpler and easier to complete
+            - It will the n add all the smaller solutions up to provide the end result
+
+#8 LeetCode53
+    - Name: Maximum Subarray
+    - Dificulty: Medium
+    - Description:
+        Given an integer array nums, find the subarray with the largest sum, and return its sum.
+
+    + Guide
+        - Use a recursive function which uses divide & conquer to calculate the subarray
+        - The function will call itself to find the maximum sum of the left and right subarrays and
+        - The maximum sum of the subarray will be the maximum of the maximum sum of the left
+        subarray, the maximum sum of the right subarray, and the sum of the current sub
+        array.

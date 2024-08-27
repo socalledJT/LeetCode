@@ -119,3 +119,42 @@ Guides & Concepts for leetcode problems
         - Since 't' contains all elements of 's' and more, all characters that appear
             in both 's' and 't' will cancel out (Due to XOR) except for the 
             additional character in 't'
+
+#10 LeetCode176
+    - Name: Second Highest Salary
+    - Dificulty: Medium
+    - Description:
+        Write a solution to find the second highest salary from the Employee table.
+        If there is no second highest salary, return null (return None in Pandas)..
+   
+    + Guide
+        - Find the highest Salary that is not included in the query of the highest salary.
+
+#11 LeetCode100
+    - Name: Same Tree
+    - Dificulty: Easy
+    - Description:
+        Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+        Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
+
+    + New Concepts
+        + Breadth-First-Search
+            - Used to traverse Trees or graphs by recursively calling itself and visiting each tree node!
+   
+    + Guide
+        - Write a recursive BFS function to check the values of both trees and check if they're the same
+
+#12 LeetCode15
+    - Name: 3Sum
+    - Dificulty: Medium
+    - Description:
+        Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k,
+        and nums[i] + nums[j] + nums[k] == 0.
+        Notice that the solution set must not contain duplicate triplets.
+   
+    + Guide
+        - Sort the array first, this makes it easier to not include duplicate values
+        - Use a two-pointer technique to find the third element that makes the sum equal to 0
+        - After choosing the first element using a for loop, use the two-pointer (left, right) to navigate through the list
+            check to see if values are duplicate, or if the sum of the 3 values does not equal 0
+            If that, move forward moving the pointers +1 for the left and -1 for the right

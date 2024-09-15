@@ -158,3 +158,24 @@ Guides & Concepts for leetcode problems
         - After choosing the first element using a for loop, use the two-pointer (left, right) to navigate through the list
             check to see if values are duplicate, or if the sum of the 3 values does not equal 0
             If that, move forward moving the pointers +1 for the left and -1 for the right
+
+#13 LeetCode22
+    Name: Generate Parentheses
+    Difficulty: Medium
+    Description:
+        Given `n` pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+    + New Concepts:
+        + Dynamic Programming
+            - Used to solve problems that have overlapping subproblems, which means that the problem can be broken
+                down by recursively calling itself until the base case is reached
+
+        + Guide:
+            - Create a helper function to  recursively call
+            - Create a list to store the result
+            - Use a string to store the current combination
+            - Use a counter to keep track of the number of open and close parentheses (Left and Right)
+            - If the Left counter is greater than `n`, add an open parenthesis to the current combination
+            - If the Right counter is less than the Left one, add a close parenthesis to the current combination
+            - If the current combination is valid, add it to the result list
+            - Return the result list

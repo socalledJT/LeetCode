@@ -12,4 +12,4 @@ class Solution:
         if not p or not q or p.val != q.val: # If only one is empty, or the values don't match, they're not euqal
             return False
         # The function will call itself for each not=de to the left and to the right of the tree
-        return (self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.righ
+        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.righ)

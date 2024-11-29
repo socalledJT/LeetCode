@@ -179,3 +179,17 @@ Guides & Concepts for leetcode problems
             - If the Right counter is less than the Left one, add a close parenthesis to the current combination
             - If the current combination is valid, add it to the result list
             - Return the result list
+
+#LeetCode1
+    Name: TwoSum
+    Difficulty: Easy
+    Description: 
+        Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
+
+        + Guide
+            - Initialize an empty dictionary, to store the value and it's index on the given array
+            - Enumerate through the list
+            - While doing that, calculae Target - current element of list
+            - Check to see if that difference is on the dictionary
+            - If it is, return the index of the differenc that has been stored, and the index of the current element
+            - If not, add that element into the Dictionary as well

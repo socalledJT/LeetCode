@@ -2,33 +2,20 @@ package LeetCode9SecondSolution;
 
 public class Solution {
     public boolean isPalindrome(int x) {
-        // Negative Numbers are always false
-        if (x < 0) {
+        // Negative numbers are not palindromes
+        // Also, numbers ending in 0 (except 0 itself) are not palindromes
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
             return false;
         }
 
-        int lVal = 1;
-        while (x >= 10 * lVal) {
-            // Var to calculate the value of the left digit of the integer
-            // 121 would % by 100 for us to get the left 1 digit on the hundreds
-            lVal *= 10;
+        int reversed = 0;
+
+        while (x > reversed) {
+            reversed = reversed * 10 + x % 10;
+            x /= 10;
         }
 
-        while ( x != 0) {
-            // Find the right digit
-            int right = x % 10;
-            // Find the left Digit
-            int left = x / lVal;
-
-            // Compare the two digits to see if they are a palindrome
-            if (left != right) {
-                return false;
-            }
-            // Chop off the two left and right digits
-            x = (x % lVal) / 10;
-            // Remove two digits from the lVal calculator since we removed 2 digits from the integer
-            lVal = lVal / 100;
-        }
-        return true;
+        // Compare original left half with reversed right half
+        return x == reversed || x == reversed / 10;
     }
 }

@@ -210,3 +210,20 @@ Guides & Concepts for leetcode problems
                 + If not, move the buy pointer to the sell pointer since that one is the smaller of the two
             - Iterate through the array
             - return the maximum profit by the end
+
+#16 LeetCode42
+    Name Trapping Rain water
+    Difficulty: Hard
+    Description:
+        Given n non-negative integers representing an elevation map where the width of each bar is 1, 
+        compute how much water it can trap after raining.
+
+        + Guide
+            - Create 2 pointers, left and right to traverse the array
+            - Create a result variable for the final result
+            - Create a left and right Max variables to store the values
+            + Traverse the array through a while loop from left to right
+                - To calculae the ammount of trapped water find the smallest of the max variables 
+                    and divide the value of the left or right pointer depending on the case
+                - Add the result to the result variable
+            - Print the final result

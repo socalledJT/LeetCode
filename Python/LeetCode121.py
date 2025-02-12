@@ -1,3 +1,4 @@
+from typing import List
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         buy, sell = 0, 1 # Initialize two pointers to check each price in the array

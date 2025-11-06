@@ -1,4 +1,4 @@
-class Solution {
+public class Solution {
     public int trap(int[] height) {
         // Take into consideration that the array might be empty
         if (height == null || height.length == 0) {
